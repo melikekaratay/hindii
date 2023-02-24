@@ -139,10 +139,14 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
   });
 </script>
 <div id="google_translate_element"></div>
-
+<style>#google_translate_element,.skiptranslate{display:none;}body{top:0!important;}</style>
  <script type="text/javascript">
   function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  new google.translate.TranslateElement({
+	    pageLanguage: 'en', 
+            includedLanguages: 'hi', 
+            autoDisplay: true
+}, 'google_translate_element');
   }
 </script>
 
